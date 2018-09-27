@@ -1,0 +1,280 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <style>
+		body{
+		background-color: black;
+		}
+        header {
+            display: block;
+        }
+        
+        header #banner {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 700px;
+            background: #555 url('img/banner_bg.jpg') no-repeat 50%/cover;
+            overflow: hidden;
+			clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 110%, 0% 90%);
+        }
+        
+        h3 {
+            width: 60%;
+            text-align: center;
+            font-size: 72px;
+            font-family: 'Bungee Hairline', cursive;
+            color: whitesmoke;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        
+        h2 {
+            width: 60%;
+            text-align: center;
+            font-size: 32px;
+            font-family: 'Bungee Hairline', cursive;
+            color: whitesmoke;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+		
+        h1 {
+            width: 60%;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Bungee Hairline', cursive;
+            color: whitesmoke;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        
+        .nupp {
+            background-color: #00FFFF;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        
+        ._menu {
+            position: fixed;
+            display: inline-block;
+        }
+        
+        .menu_context {
+            display: none;
+            position: absolute;
+            background-color: #067272;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .menu_context a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .menu_context a:hover {
+            background-color: #66ffff;
+        }
+        
+        ._menu:hover .menu_context {
+            display: block;
+        }
+        
+        ._menu:hover .nupp {
+        }
+        
+        main {
+            flex: 1 1 auto;
+        }
+        
+        .about {
+            margin: 0 auto;
+            max-width: 800px;
+            width: 80%;
+        }
+        
+        main section .content {
+            padding-top: 70px;
+            margin: 0 auto;
+            max-width: 800px;
+            width: 80%;
+        }
+        
+		.content_bout {
+            padding-top: 10px;
+            margin: 0 auto;
+            max-width: 800px;
+            width: 80%;
+        }
+		
+        img {
+            display: block;
+            margin: 0 auto 10px;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            filter: grayscale(75%);
+            transition: .5s ease-in-out;
+        }
+        
+        p {
+            display: block;
+            color: whitesmoke;
+        }
+        #contacts
+        {
+            background: url(img/contacts.jpg);
+            width: 100%;
+            color: whitesmoke;
+        }
+        #contacts h2
+        {
+            color: whitesmoke;
+        }
+        .andmed
+        {
+            padding-top: 2px;
+        }
+        .andmed1
+        {
+            padding-top: 2px;
+            padding-bottom: 20px;
+        }
+        .mail{
+            height: 200px;
+            width: 750px;
+            border-radius: 25%;
+            background-color: rgba(17, 217, 17, 0.6);
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Bungee Hairline', cursive;
+            color: whitesmoke;
+        }
+        footer
+        {
+            height: 75px;
+	        width:100%;
+	        background: url(img/footer.jpg);
+			clip-path: polygon(0% 0%, 100% 80%, 100% 100%, 50% 100%, 0% 90%);
+        }
+        .cptxt
+        {
+            padding-top: 15px;
+            padding-left: 5%;
+            font-size: 20px;
+            font-family: 'Bungee Hairline', cursive;
+            color: whitesmoke;
+        }
+        .projekt{
+            padding-left: 10%;
+            padding-right: 10%;
+            width: 80%;
+        }
+        .container
+        {
+            display:block;
+            box-sizing:border-box;
+            width:33.33%;
+            height:280px;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            float:left;
+        }
+        h6{
+            font-size: 15px;
+            font-family: 'Bungee Hairline', cursive;
+            text-align: center;
+            color: whitesmoke;
+        }
+        .info{
+            font-family: 'Bungee Hairline', cursive;
+            text-align: center;
+            font-size: 12px;
+            color: red;
+        }
+        .ss
+        {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="_menu">
+    <button class="nupp">Menu</button>
+    <div class="menu_context">
+        <a href="#banner">Top</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#projects">Work in Progress</a>
+        <a href="#contacts">Contact me</a>
+        </div>
+    </div>
+    <header>
+        <div id="banner">
+	<div class="_menu">
+    <button class="nupp">Menu</button>
+		<div class="menu_context">
+            <a href="#banner">Top</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#projects">Work in Progress</a>
+            <a href="#contacts">Contact me</a>
+        </div>
+    </div>
+            <h3>Kardo Talvik</h3>
+			<h1 class="ss">Level Designer / Mod developer / Web Coder</h1>
+        </div>
+    </header>
+    <main>
+        <section id="aboutme" class="about">
+            <h2>About Me</h2>
+            <div class="content_bout">
+                <img src="img/headshot.jpg" />
+                <p>My name is Kardo (Seemed obvious from name above), 18 years old, been coding websites since age of 16 and started making mods and maps when I was 14 (Back then, I wasnt as skilled as I am now. Did have a 2,5 year break from it, but now I'm back :) )
+                Hobbies - Football (Soccer for you american newbs) and Gaming. Since 2015-2016 have obtained licence as league level footballer (That doesnt make me good or anything). Education - I'm currently finishing 2nd year in tallinn polytechnic school, multimedia speciality (Web developer / Graphic designer). You can find my current projects in Work in Progress Section  
+                </p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Work In Progress</h2>
+            <div class="projekt">
+                    <div class="container" style="background-image: url(img/car_dr.jpg)">
+                        <h6>CAR Deathrun</h6>
+                        <p class="info">Started in February 2018. In final development phase (Add characters/weapons, upload to server and ready to go)</p>
+                    </div>
+                    <div class="container" style="background-image: url(img/gg.jpg)">
+                        <h6>Gungame mod</h6>
+                        <p class="info">Started in Summer 2017. Back then had 3-4 gsc files to work with. Now have ended up with fully functioning professional looking mod</p>
+                    </div>
+                    <div class="container" style="background-image: url(img/ktk_nnj.jpg)">
+                        <h6>mp_ktk_nnj</h6>
+                        <p class="info">Requested by [Ninja] clan in May 2018. A simple small sized Kill The King gametype map</p>
+                    </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <div class="content_bout">
+                <p class="andmed">Want to request a map/mod/website?</p>
+                <p class="andmed">Use button below to write an Email and wait for my response</p>
+                <p class="andmed"></p>Note that to request something. Required questions must be anwsered, link creates template automatically</p>
+                <a href="mailto:redmist1201@gmail.com?subject=Request%20a%20site&amp;body=Thing%20you%20request%20(Map%2FMod%2FWebsite)%20-%20%0A%0ARequester%20name%20(If%20company%2C%20write%20company%20name)*%20-%20%0A%0AIf%20it's%20website%0AWebsite%20title*%20-%20%0A%0AWhat%20it%20should%20contain*%20-%20%0A%0AIf%20its%20mod%0A%0AWhat%20shall%20mod%20be%20called*%20-%20%0A%0AWhat%20you%20request%20in%20mod*%20-%20%0A%0AIf%20you%20request%20a%20map%0A%0ADrawing%20link%20or%20something%20(What%20map%20looks%20like%20in%20your%20vision)%20-%20%0A%0AMap%20name%20-%0A%0AAny%20script%20functions%20which%20you%20want%20included%3F%20-%20">Send mail</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="cptxt">Kardo Talvik © 2018</p>
+    </footer>     
+</body>
+
+</html>
